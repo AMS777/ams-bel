@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+
+    Options +FollowSymLinks -Indexes -MultiViews
+
+    RewriteEngine On
+
+    # Handle already constructed urls
+    RewriteRule ^backend/public/index\.php - [L]
+    RewriteRule ^frontend/dist/ - [L]
+
+    # Handle Lumen api
+    RewriteRule ^api/ /backend/public/index.php [L]
+
+    # Handle Ember.js requests
+    RewriteCond %{DOCUMENT_ROOT}/frontend/dist/$1 -f [OR]
+    RewriteCond %1 -d
+    RewriteRule (.*) /frontend/dist/$1 [L,S=1]
+    RewriteRule (.*) /frontend/dist/index.html [L]
+
+</IfModule>
