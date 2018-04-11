@@ -59,6 +59,35 @@ of your own project:
 * [ams-bl](https://github.com/AMS777/ams-bl) 
 
 
+## Run Development Environment
+
+To serve the project locally, you need to run first the Lumen development server
+and then the Ember.js development server proxied.
+
+To run the Lumen development server, on command line in the backend directory 
+(command from Flipbox Lumen Generator package):
+
+```
+$ php artisan serve
+```
+
+To run the Ember.js development server proxied, on command line in the frontend 
+directory:
+
+```
+$ ember serve --proxy http://localhost:8000
+```
+
+
+## Usage
+
+After creating your own project from the ones in the repositories, 
+add your own files to the existing ones.
+
+You can modify the existing files on the project you've created. The key
+files are described in the Ember.js and Lumen repositories.
+
+
 ## License
 
 MIT License. Please see [LICENSE file](LICENSE) for more information.
