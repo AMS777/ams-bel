@@ -1,12 +1,9 @@
 
 # ams-bel
 
-Ember.js and Lumen JSON API quick-start boilerplate with common
-functionality like user management, authentication and email notifications.
-
 This repository is a quick and simple architecture to develop an API project 
 using [Ember.js](https://www.emberjs.com/) as frontend and 
-[Lumen](https://lumen.laravel.com/) as backend. Other architectures may be used.
+[Lumen](https://lumen.laravel.com/) as backend. Everything stays within the same domain, hence no CORS is needed (Cross-Origin Resource Sharing).
 
 It consists on a parent directory with two subdirectories and one file:
 
@@ -17,9 +14,9 @@ It consists on a parent directory with two subdirectories and one file:
 **This repository matches the [frontend project ams-be](https://github.com/AMS777/ams-be) 
 developed with the Javascript framework [Ember.js](https://www.emberjs.com/) and
 the [backend project ams-bl](https://github.com/AMS777/ams-bl) 
-developed with the PHP micro-framework [Lumen](https://lumen.laravel.com/)** 
-(though other frontend and backend may be used).
-
+developed with the PHP micro-framework [Lumen](https://lumen.laravel.com/)**. 
+These two projects are a quick-start boilerplate with common functionality like user management, authentication and email notifications to quickly start a JSON API web project.
+Other frontend and backend may be used with this architecture and other architecture may be used with those frontend and backend.
 
 ## `backend/` directory
 
